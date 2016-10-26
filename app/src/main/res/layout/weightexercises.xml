@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/editText7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText7"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Reps"
+                android:id="@+id/textView5"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="82dp"
+                android:layout_marginTop="41dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:textColor="#ffffff"
+                android:background="@drawable/button"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="122dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Exercise Name"
+                android:id="@+id/textView6"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/editText6"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="122dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText8"
+                android:background="@drawable/button"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="122dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Exercise"
+                android:id="@+id/button11"
+                android:background="@drawable/button"
+                android:textColor="#ffffff"
+                android:layout_marginRight="122dp"
+                android:layout_marginBottom="43dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="95dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Reps"
+                android:id="@+id/button10"
+                android:background="@drawable/button"
+                android:textColor="#ffffff"
+                android:layout_marginRight="122dp"
+                android:layout_marginStart="49dp"
+                android:layout_alignTop="@+id/button11"
+                android:layout_toEndOf="@+id/button11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Weights"
+                android:id="@+id/textView3"
+                android:textColor="#ffffff"
+                android:layout_marginRight="122dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginTop="170dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignEnd="@+id/button11" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

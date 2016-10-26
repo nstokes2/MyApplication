@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nathanielstokes.helloworld.MainActivity"
+    android:focusable="false"
+    android:id="@+id/workoutPage"
+    android:background="#000000">
+
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainPageTitle"
+
+        android:layout_centerHorizontal="true"
+        >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/YourWorkout"
+
+
+                    android:text="Your Workout"
+
+                    android:textColor="#ffffff"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Cardio"
+        android:id="@+id/button"
+        android:onClick="addRunningActivity"
+
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/MainPageTitle"
+        android:layout_toStartOf="@+id/MainPageTitle" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Exercise"
+        android:id="@+id/button2"
+        android:onClick="addExercise"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Push Ups"
+        android:onClick="addPushUps"
+        android:id="@+id/button9"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/MainPageTitle"
+        android:layout_toEndOf="@+id/MainPageTitle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button8"
+        android:onClick="saveFile"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_toLeftOf="@+id/MainPageTitle"
+        android:layout_toStartOf="@+id/MainPageTitle" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:text="Enter filename"
+        android:background="#ffffff"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@+id/button9"
+        android:layout_alignEnd="@+id/button9" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workoutList"
+        android:layout_below="@+id/MainPageTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button"
+        android:visibility="visible"
+        android:footerDividersEnabled="false"
+        android:dividerHeight="0px"
+        android:divider="#ffffff"
+        style="@style/AppTheme" />
+
+
+</RelativeLayout>

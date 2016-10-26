@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"  xmlns:tools="http://schemas.android.com/tools"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nathanielstokes.helloworld.MainActivity"
+    android:focusable="false"
+    android:id="@+id/mainSource">
+
+
+    <HorizontalScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Cardio"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="71dp"
+
+        >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:stretchColumns="2">
+
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Time1"
+                    android:linksClickable="false"
+                    android:background="@drawable/border"
+                    android:minWidth="150dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="20dp"
+                    android:text="Time"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Distance1"
+                    android:linksClickable="false"
+                    android:background="@drawable/border"
+                    android:minWidth="150dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="20dp"
+                    android:text="Distance"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText"
+                    android:linksClickable="false"
+                    android:background="@drawable/border"
+                    android:minWidth="100dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText2"
+                    android:linksClickable="false"
+                    android:background="@drawable/border"
+                    android:minWidth="100dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="20dp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+    <HorizontalScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Reps"
+        android:layout_below="@+id/Cardio"
+        android:layout_centerHorizontal="true">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Weight"
+                    android:linksClickable="false"
+                    android:background="@drawable/border"
+                    android:minWidth="100dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="20dp"
+                    android:text="Weight"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Repetitions"
+                    android:linksClickable="false"
+                    android:background="@drawable/border"
+                    android:minWidth="150dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="20dp"
+                    android:text="Repetitions"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DistanceText"
+                    android:linksClickable="false"
+                    android:background="@drawable/border"
+                    android:minWidth="150dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TimeText"
+                    android:linksClickable="false"
+                    android:background="@drawable/border"
+                    android:minWidth="100dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="20dp" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ExerciseName"
+
+        android:layout_centerHorizontal="true"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText3"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/MainPageTitle"
+
+
+                    android:text="Exercise Name: Cardio"
+                    android:textAlignment="center" />
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Cardio"
+        android:id="@+id/button"
+        android:layout_marginBottom="129dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/MainPageTitle"
+        android:layout_alignEnd="@+id/MainPageTitle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Exercise"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:onClick="addExercise"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Run"
+        android:id="@+id/runTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:textColor="@color/abc_search_url_text_selected" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/runTitle"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="218dp"
+            android:layout_height="152dp"
+            android:text="Latitude"
+            android:id="@+id/latitudeId"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/abc_search_url_text_selected" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:text="Longitude"
+            android:id="@+id/longitudeId"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/abc_search_url_text_selected" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Run"
+        android:id="@+id/addRunButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:id="@+id/distanceId"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/abc_search_url_text_selected" />
+</RelativeLayout>
